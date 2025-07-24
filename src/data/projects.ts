@@ -76,6 +76,7 @@ export const projects: Project[] = [
     description: 'A web-based tool that converts Excel spreadsheet data into interactive charts using JavaScript. Features drag-and-drop Excel upload and real-time visualization directly in the browser.',
     technologies: ['JavaScript', 'HTML', 'CSS', 'Chart.js', 'SheetJS'],
     imageUrl: '/images/inventory7.png',
+    liveUrl: 'https://helmet-detection-system.netlify.app/',
     githubUrl: 'https://github.com/Foam-01/Excel-to-Web-Data-Chart-System',
     featured: false,
   },
