@@ -1,4 +1,4 @@
-cd C:\Users\PC\Downloads\kiro-personal-portfolio-landing-page-main\kiro-personal-portfolio-landing-page-main
+
 
 # 👨‍💻 Personal Portfolio Website
 
