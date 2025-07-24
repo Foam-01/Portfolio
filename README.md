@@ -51,7 +51,7 @@ Portfolio/
 ```
 
 🚀 Getti  
-
+```bash
 # 1. Clone the repo
 git clone https://github.com/Foam-01/Portfolio.git
 
@@ -63,6 +63,7 @@ npm install
 
 # 4. Start development server
 npm run dev
+```
 
 
 🙏 Credits
