@@ -66,7 +66,5 @@ npm run dev
 ```
 
 
-🙏 Credits
-Developed with 💖 by Foam-01
-Inspired by modern anime UI trends and otaku creativity
+🙏 Developed with 💖 by Foam-01
 
