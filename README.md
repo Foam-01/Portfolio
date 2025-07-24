@@ -28,8 +28,8 @@ A personal portfolio website showcasing my skills, projects, and experiences as 
 
 ## 🔗 Live Demo & Repository
 
-- 🔴 **Live Demo**: https://template-anime.netlify.app/
-- 📦 **GitHub**: [https://github.com/Foam-01/Template-Anime](https://github.com/Foam-01/Template-Anime)
+- 🔴 **Live Demo**: https://portfoliof-01.netlify.app/
+- 📦 **GitHub**: https://github.com/Foam-01/Portfolio?tab=readme-ov-file
 
 
 ## 📁 Project Structure
