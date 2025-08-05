@@ -90,4 +90,16 @@ export const projects: Project[] = [
     githubUrl: 'https://github.com/Foam-01/chemicalconversion?tab=readme-ov-file',
     featured: false,
   },
+  {
+    id: '9',
+    title: '🍰 Yum-cafe Website',
+    description: 'A beautiful and responsive website for Yum-cafe, a bakery and cafe that serves delicious pastries and drinks. Built with clean HTML and CSS with Google Maps integration.',
+    technologies: ['HTML', 'CSS', 'Responsive Design'],
+    imageUrl: '/images/inventory9.png',
+    liveUrl: 'https://yum-cafe.netlify.app/',
+    githubUrl: 'https://github.com/Foam-01/Yum-cafe',
+    featured: false,
+  },
+
+
 ]
