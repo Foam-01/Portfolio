@@ -98,8 +98,17 @@ export const projects: Project[] = [
     imageUrl: '/images/inventory9.png',
     liveUrl: 'https://yum-cafe.netlify.app/',
     githubUrl: 'https://github.com/Foam-01/Yum-cafe',
-    featured: false,
+    featured: true,
   },
-
+  {
+    id: '10',
+    title: '🧺 Laundry Management System',
+    description: 'A web app to manage laundry machines: real‑time status, booking, admin panel, and usage stats.',
+    technologies: ['React.js', 'Tailwind CSS', 'FastAPI', 'MongoDB', ],
+    imageUrl: '/images/inventory10.png',
+    liveUrl: 'https://laundry-add.netlify.app/',
+    githubUrl: 'https://github.com/Foam-01/laundry-app',
+    featured: true,
+  },
 
 ]
