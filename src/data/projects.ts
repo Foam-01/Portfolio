@@ -110,5 +110,86 @@ export const projects: Project[] = [
     githubUrl: 'https://github.com/Foam-01/laundry-app',
     featured: true,
   },
+  {
+    id: '11',
+    title: '📈 List of Stocks',
+    description: 'A simple web page that displays a list of stocks and ETFs with tables for quick viewing.',
+    technologies: ['HTML', 'CSS'],
+    imageUrl: '/images/inventory11.png',
+    
+    githubUrl: 'https://github.com/Foam-01/List-of-stocks',
+    featured: false,
+},
+{
+    id: '12',
+    title: '🩺 Doctor-s',
+    description: 'A full-stack web application for doctor appointment and patient management, including backend API, frontend UI, and test modules.',
+    technologies: ['React.js', 'Node.js', 'Python', 'FastAPI', 'MongoDB'],
+    imageUrl: '/images/inventory12.png',
+    
+    githubUrl: 'https://github.com/Foam-01/doctor-s',
+    featured: false,
+},
+{
+    id: '13',
+    title: '🐱 Flutter List of Cat Breeds',
+    description: 'A cross-platform Flutter app that displays a list of cat breeds with detailed information, supporting Android, iOS, web, and desktop platforms.',
+    technologies: ['Flutter', 'Dart'],
+    imageUrl: '/images/inventory13.png',
+    liveUrl: '', // ถ้ามีลิงก์ตัวอย่างเว็บหรือไฟล์ APK ให้ใส่ที่นี่
+    githubUrl: 'https://github.com/Foam-01/Flutter-List-of-cat-breeds',
+    featured: false,
+},
+{
+    id: '14',
+    title: '🐾 Flutter Cat App Result',
+    description: 'A Flutter app showcasing cat breed search results and details, supporting multiple platforms including Android, iOS, web, and desktop.',
+    technologies: ['Flutter', 'Dart'],
+    imageUrl: '/images/inventory14.png',
+    liveUrl: '', // ถ้ามีลิงก์ตัวอย่างเว็บหรือไฟล์ APK ให้ใส่ที่นี่
+    githubUrl: 'https://github.com/Foam-01/Flutter_CatApp_Result',
+    featured: false,
+},
+{
+    id: '15',
+    title: '🔌 Flutter Custom API',
+    description: 'A Flutter application demonstrating how to connect and fetch data from a custom API, supporting Android, iOS, web, and desktop platforms.',
+    technologies: ['Flutter', 'Dart', 'REST API'],
+    imageUrl: '/images/inventory15.png',
+    liveUrl: '', // ถ้ามีลิงก์ตัวอย่างเว็บหรือไฟล์ APK ให้ใส่ที่นี่
+    githubUrl: 'https://github.com/Foam-01/FlutterCustomAPI',
+    featured: false,
+},
+{
+    id: '16',
+    title: '🏢 Flutter Company List API Presentation',
+    description: 'A Flutter app that fetches and presents a list of companies from an API, showcasing data in an organized and user-friendly UI. Supports Android, iOS, web, and desktop.',
+    technologies: ['Flutter', 'Dart', 'REST API'],
+    imageUrl: '/images/inventory16.png',
+    liveUrl: '', // ถ้ามีลิงก์ APK หรือเว็บให้ใส่ที่นี่
+    githubUrl: 'https://github.com/Foam-01/Flutter_CompanyList_API_Presentation',
+    featured: false,
+},
+{
+    id: '17',
+    title: '🎯 Flutter Anime Finder App (Full)',
+    description: 'A Flutter application for searching and discovering anime with detailed information. Supports Android, iOS, web, and desktop platforms.',
+    technologies: ['Flutter', 'Dart', 'REST API'],
+    imageUrl: '/images/inventory17.png',
+    liveUrl: '', // ใส่ลิงก์ APK หรือเว็บถ้ามี
+    githubUrl: 'https://github.com/Foam-01/flutter-anime_finder_app_full',
+    featured: false,
+},
+{
+    id: '18',
+    title: '👷 Worker Mobile',
+    description: 'A Flutter mobile application designed for worker task management and tracking, supporting Android, iOS, web, and desktop platforms.',
+    technologies: ['Flutter', 'Dart'],
+    imageUrl: '/images/inventory18.png',
+    liveUrl: '', // ถ้ามีไฟล์ APK หรือเว็บให้ใส่ที่นี่
+    githubUrl: 'https://github.com/Foam-01/worker-mobile-',
+    featured: false,
+},
+
 
 ]
