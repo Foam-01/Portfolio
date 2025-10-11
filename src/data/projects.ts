@@ -22,6 +22,16 @@ export const projects: Project[] = [
     featured: true,
   },
   {
+    id: '19',
+    title: '😎 Face Blur Detection App',
+    description: 'An AI-powered web application that detects and automatically blurs faces in uploaded images. Built with Angular (Frontend) and NestJS (Backend), integrated with PostgreSQL + Supabase, Swagger for API docs, and Docker for deployment.',
+    technologies: ['Angular', 'NestJS', 'TypeScript', 'Tailwind CSS', 'Face-api.js', 'PostgreSQL', 'Supabase', 'Docker', 'Swagger'],
+    imageUrl: '/images/inventory19.png', // ใส่ path รูปภาพ thumbnail ของโปรเจกต์
+    liveUrl: '', // ถ้ามี demo ออนไลน์ให้ใส่ URL
+    githubUrl: 'https://github.com/Foam-01/Face-Blur',
+    featured: true,
+  },
+  {
     id: '2',
     title: '🧾 Thai-English Dictionary',
     description: 'A static website for learning basic English vocabulary with Thai meanings and pronunciation. Built using HTML, CSS, and JavaScript. Fully responsive and optimized for simplicity and speed.',
@@ -98,7 +108,7 @@ export const projects: Project[] = [
     imageUrl: '/images/inventory9.png',
     liveUrl: 'https://yum-cafe.netlify.app/',
     githubUrl: 'https://github.com/Foam-01/Yum-cafe',
-    featured: true,
+    featured: false,
   },
   {
     id: '10',
@@ -108,7 +118,7 @@ export const projects: Project[] = [
     imageUrl: '/images/inventory10.png',
     liveUrl: 'https://laundry-add.netlify.app/',
     githubUrl: 'https://github.com/Foam-01/laundry-app',
-    featured: true,
+    featured: false,
   },
   {
     id: '11',
@@ -190,6 +200,7 @@ export const projects: Project[] = [
     githubUrl: 'https://github.com/Foam-01/worker-mobile-',
     featured: false,
 },
+
 
 
 ]
