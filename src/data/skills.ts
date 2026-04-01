@@ -7,24 +7,23 @@ export interface Skill {
 // Sample skills data organized by categories
 export const skills: Skill[] = [
   // Frontend Skills
-  { name: 'React', category: 'frontend', level: 'intermediate' },
-  { name: 'Tailwind CSS', category: 'frontend', level: 'intermediate' },
-  { name: 'Next.js', category: 'frontend', level: 'intermediate' },
-  
+  { name: "React", category: "frontend", level: "intermediate" },
+  { name: "Next.js", category: "frontend", level: "beginner" },
+  { name: "Tailwind CSS", category: "frontend", level: "intermediate" },
+  { name: "bootstrap 5", category: "frontend", level: "intermediate" },
 
   // Backend Skills
-  { name: 'Node.js', category: 'backend', level: 'intermediate' },
-  { name: 'Express.js', category: 'backend', level: 'intermediate' },
-  { name: 'PostgreSQL', category: 'backend', level: 'intermediate' },
-  { name: 'MongoDB', category: 'backend', level: 'intermediate' },
+  { name: "Node.js", category: "backend", level: "intermediate" },
+  { name: "Express.js", category: "backend", level: "intermediate" },
+  { name: "NestJS", category: "backend", level: "beginner" },
+  { name: "GraphQL", category: "backend", level: "beginner" },
+  { name: "PostgreSQL", category: "backend", level: "beginner" },
+  { name: "MongoDB", category: "backend", level: "beginner" },
+  { name: "Supabase", category: "backend", level: "beginner" },
 
   // Tools & Technologies
-  { name: 'Git', category: 'tools', level: 'beginner' },
-  { name: 'Docker', category: 'tools', level: 'beginner' },
-  { name: 'AWS', category: 'tools', level: 'beginner' },
-  { name: 'Kubernetes ', category: 'tools', level: 'beginner' },
-  { name: 'Netlify', category: 'tools', level: 'intermediate' },
-  
-
-  
-]
+  { name: "Git", category: "tools", level: "intermediate" },
+  { name: "Docker", category: "tools", level: "beginner" },
+  { name: "Netlify", category: "tools", level: "beginner" },
+  { name: "Render", category: "tools", level: "beginner" },
+];

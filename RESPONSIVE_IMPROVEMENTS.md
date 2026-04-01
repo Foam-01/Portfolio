@@ -1,5 +1,4 @@
-cd C:\Users\PC\Downloads\kiro-personal-portfolio-landing-page-main\kiro-personal-portfolio-landing-page-main
-npm run dev
+C:\Users\GIGABYTE\Desktop\Portfolio>npm run dev
 
 # Responsive Design and Mobile Optimizations
 
