@@ -64,8 +64,8 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">About</h3>
             <p className="text-gray-300 text-sm leading-relaxed">
-              {personalInfo.title} passionate about creating innovative solutions 
-              and building meaningful digital experiences.
+              {personalInfo.title} focused on responsive interfaces, scalable web
+              apps, and continuous growth.
             </p>
           </div>
         </div>

@@ -1,7 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { personalInfo } from '../../data/personal'
-import { skills } from '../../data/skills'
+import { type Skill, skills } from '../../data/skills'
 import { SECTION_IDS } from '../../utils/constants'
 
 const containerVariants = {
@@ -47,19 +47,55 @@ const About = React.memo(() => {
     return acc
   }, {} as Record<string, typeof skills>)
 
+  const categoryOrder: Skill['category'][] = [
+    'frontend',
+    'backend',
+    'api',
+    'database',
+    'tools',
+    'data',
+    'mobile',
+    'other',
+  ]
+
   // Category display names
-  const categoryNames = {
+  const categoryNames: Record<Skill['category'], string> = {
     frontend: 'Frontend',
     backend: 'Backend',
+    api: 'API / Query',
+    database: 'Database',
     tools: 'Tools & Technologies',
-    other: 'Other Skills'
+    data: 'Data / Sync',
+    mobile: 'Mobile',
+    other: 'Other Skills',
   }
 
-  // Skill level colors
-  const levelColors = {
-    beginner: 'bg-yellow-100 text-yellow-800 border-yellow-200',
-    intermediate: 'bg-blue-100 text-blue-800 border-blue-200',
-    advanced: 'bg-green-100 text-green-800 border-green-200'
+  const sortedCategoryEntries = Object.entries(skillsByCategory).sort(
+    ([a], [b]) =>
+      categoryOrder.indexOf(a as Skill['category']) -
+      categoryOrder.indexOf(b as Skill['category'])
+  )
+
+  // โทนเดียวกันทุกระดับ: bg-*-50 + ตัวอักษรเข้ม + border อ่อน
+  const levelColors: Record<(typeof skills)[number]['level'], string> = {
+    familiar: 'bg-violet-50 text-violet-900 border-violet-200',
+    beginner: 'bg-amber-50 text-amber-900 border-amber-200',
+    intermediate: 'bg-sky-50 text-sky-900 border-sky-200',
+    advanced: 'bg-emerald-50 text-emerald-900 border-emerald-200',
+  }
+
+  const levelLegendDot: Record<(typeof skills)[number]['level'], string> = {
+    familiar: 'bg-violet-400',
+    beginner: 'bg-amber-400',
+    intermediate: 'bg-sky-400',
+    advanced: 'bg-emerald-500',
+  }
+
+  const levelTitleLabel: Record<(typeof skills)[number]['level'], string> = {
+    familiar: 'Familiar',
+    beginner: 'Beginner',
+    intermediate: 'Intermediate',
+    advanced: 'Advanced',
   }
 
   const handleResumeDownload = () => {
@@ -111,13 +147,8 @@ const About = React.memo(() => {
               <h3 className="text-2xl font-semibold text-gray-900 mb-4">
                 My Story
               </h3>
-              <p className="text-lg text-gray-600 leading-relaxed mb-6">
+              <p className="text-lg text-gray-600 leading-relaxed whitespace-pre-line">
                 {personalInfo.bio}
-              </p>
-              <p className="text-lg text-gray-600 leading-relaxed">
-                I'm an aspiring full-stack developer who’s deeply passionate about learning, growing, and building meaningful web applications. I may not have internship experience yet, but I make up for it with strong motivation, continuous self-learning, and a desire to create things that matter.
-                Currently, I’m focusing on React, Node.js, and cloud technologies to develop user-friendly, modern, and scalable applications. I enjoy turning ideas into real projects, and every challenge is an opportunity for me to improve.
-                Beyond code, I love exploring new tools, learning from real-world developers, and sharing knowledge with others. I believe in progress, dedication, and staying true to what I love — creating digital experiences that have real impact.
               </p>
             </div>
 
@@ -164,7 +195,7 @@ const About = React.memo(() => {
             </h3>
 
             <div className="space-y-8">
-              {Object.entries(skillsByCategory).map(([category, categorySkills], categoryIndex) => (
+              {sortedCategoryEntries.map(([category, categorySkills], categoryIndex) => (
                 <motion.div
                   key={category}
                   initial={{ opacity: 0, y: 20 }}
@@ -173,7 +204,7 @@ const About = React.memo(() => {
                   transition={{ delay: categoryIndex * 0.1, duration: 0.5 }}
                 >
                   <h4 className="text-lg font-medium text-gray-800 mb-4">
-                    {categoryNames[category as keyof typeof categoryNames]}
+                    {categoryNames[category as Skill['category']]}
                   </h4>
 
                   <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-3">
@@ -181,7 +212,7 @@ const About = React.memo(() => {
                       <motion.div
                         key={skill.name}
                         className={`px-3 py-2 rounded-lg border text-sm font-medium text-center transition-all duration-200 hover:shadow-md touch-manipulation min-h-[40px] flex items-center justify-center ${levelColors[skill.level]}`}
-                        title={`${skill.name} - ${skill.level}`}
+                        title={`${skill.name} — ${levelTitleLabel[skill.level]}`}
                         variants={skillVariants}
                         initial="hidden"
                         whileInView="visible"
@@ -205,18 +236,24 @@ const About = React.memo(() => {
               viewport={{ once: true }}
               transition={{ delay: 0.5, duration: 0.5 }}
             >
-              <h5 className="text-sm font-medium text-gray-700 mb-3">Skill Levels:</h5>
-              <div className="flex flex-wrap gap-3">
-                <div className="flex items-center">
-                  <div className="w-3 h-3 bg-yellow-200 rounded-full mr-2"></div>
+              <h5 className="text-sm font-medium text-gray-700 mb-3">Skill Levels</h5>
+              <div className="flex flex-wrap gap-x-4 gap-y-2">
+                <div className="flex items-center gap-2">
+                  <div
+                    className={`w-3 h-3 shrink-0 rounded-full ${levelLegendDot.familiar}`}
+                  ></div>
+                  <span className="text-sm text-gray-600">Familiar</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <div className={`w-3 h-3 shrink-0 rounded-full ${levelLegendDot.beginner}`}></div>
                   <span className="text-sm text-gray-600">Beginner</span>
                 </div>
-                <div className="flex items-center">
-                  <div className="w-3 h-3 bg-blue-200 rounded-full mr-2"></div>
+                <div className="flex items-center gap-2">
+                  <div className={`w-3 h-3 shrink-0 rounded-full ${levelLegendDot.intermediate}`}></div>
                   <span className="text-sm text-gray-600">Intermediate</span>
                 </div>
-                <div className="flex items-center">
-                  <div className="w-3 h-3 bg-green-200 rounded-full mr-2"></div>
+                <div className="flex items-center gap-2">
+                  <div className={`w-3 h-3 shrink-0 rounded-full ${levelLegendDot.advanced}`}></div>
                   <span className="text-sm text-gray-600">Advanced</span>
                 </div>
               </div>
