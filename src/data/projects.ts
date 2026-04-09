@@ -16,7 +16,7 @@ export const projects: Project[] = [
     title: "📦 POS Inventory Management System",
     description:
       "Full-stack system for managing products and inventory with React, Node.js, and PostgreSQL. Features include product CRUD, user roles (Admin/Staff), stock tracking, and JWT authentication.",
-    technologies: ["React", "Node.js", "Express", "PostgreSQL", "Tailwind CSS"],
+    technologies: ["React", "Node.js", "Express", "PostgreSQL", "Bootstrap 5"],
     imageUrl: "/images/inventory.png",
     liveUrl: "",
     githubUrl:
@@ -61,6 +61,17 @@ export const projects: Project[] = [
     imageUrl: "/images/inventory22.png",
     liveUrl: "https://gloyjai.netlify.app/",
     githubUrl: "https://github.com/Foam-01/beauty-salon",
+    featured: true,
+  },
+  {
+    id: "23",
+    title: "🏆 Daily Effort Tracking App",
+    description:
+      "A personal performance tracking web app designed to record and evaluate daily effort across work, health, learning, and future goals. Built with React.js, featuring dynamic scoring, calendar visualization, and local storage for persistent data. Fully responsive and optimized for both desktop and mobile use.",
+    technologies: ["React.js", "JavaScript", "CSS", "Local Storage API"],
+    imageUrl: "/images/inventory24.png",
+    liveUrl: "https://daily-effort-tracking-app.netlify.app/",
+    githubUrl: "https://github.com/Foam-01/Daily-Effort-Tracking-App",
     featured: true,
   },
   {
@@ -211,8 +222,6 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/Foam-01/Excel-to-Web-Data-Chart-System",
     featured: false,
   },
-
- 
 
   {
     id: "13",
