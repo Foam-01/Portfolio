@@ -174,27 +174,6 @@ export const projects: Project[] = [
   },
 
   {
-    id: "5",
-    title: "💰 Financial Management App",
-    description:
-      "A desktop personal finance application built with Java. Enables users to track income, expenses, and generate monthly financial reports. Includes categorized spending for clear analysis.",
-    technologies: ["Java", "JavaFX", "OOP"],
-    imageUrl: "/images/inventory5.png",
-    liveUrl: "",
-    githubUrl: "https://github.com/Foam-01/financial-management-app",
-    featured: false,
-  },
-  {
-    id: "6",
-    title: "📝 Review App",
-    description:
-      "A Java-based system for user-submitted product reviews. Features full CRUD operations with rating capabilities. Designed with an intuitive interface for viewing and managing user feedback.",
-    technologies: ["Java", "JavaFX", "OOP"],
-    imageUrl: "/images/inventory6.png",
-    githubUrl: "https://github.com/Foam-01/review-app?tab=readme-ov-file",
-    featured: false,
-  },
-  {
     id: "20",
     title: "🤖 RPA YouTube Automation Upload Bot",
     description:
@@ -220,6 +199,27 @@ export const projects: Project[] = [
     imageUrl: "/images/inventory7.png",
     liveUrl: "",
     githubUrl: "https://github.com/Foam-01/Excel-to-Web-Data-Chart-System",
+    featured: false,
+  },
+  {
+    id: "5",
+    title: "💰 Financial Management App",
+    description:
+      "A desktop personal finance application built with Java. Enables users to track income, expenses, and generate monthly financial reports. Includes categorized spending for clear analysis.",
+    technologies: ["Java", "JavaFX", "OOP"],
+    imageUrl: "/images/inventory5.png",
+    liveUrl: "",
+    githubUrl: "https://github.com/Foam-01/financial-management-app",
+    featured: false,
+  },
+  {
+    id: "6",
+    title: "📝 Review App",
+    description:
+      "A Java-based system for user-submitted product reviews. Features full CRUD operations with rating capabilities. Designed with an intuitive interface for viewing and managing user feedback.",
+    technologies: ["Java", "JavaFX", "OOP"],
+    imageUrl: "/images/inventory6.png",
+    githubUrl: "https://github.com/Foam-01/review-app?tab=readme-ov-file",
     featured: false,
   },
 
