@@ -68,7 +68,7 @@ export const projects: Project[] = [
     title: "🏆 Daily Effort Tracking App",
     description:
       "A personal performance tracking web app designed to record and evaluate daily effort across work, health, learning, and future goals. Built with React.js, featuring dynamic scoring, calendar visualization, and local storage for persistent data. Fully responsive and optimized for both desktop and mobile use.",
-    technologies: ["React.js", "JavaScript", "CSS", "Local Storage API"],
+    technologies: ["React.js", "JavaScript", "CSS","Vite", "Local Storage API"],
     imageUrl: "/images/inventory24.png",
     liveUrl: "https://daily-effort-tracking-app.netlify.app/",
     githubUrl: "https://github.com/Foam-01/Daily-Effort-Tracking-App",
