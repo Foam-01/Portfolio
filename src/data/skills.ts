@@ -1,16 +1,16 @@
 export interface Skill {
   name: string;
   category:
-    | 'frontend'
-    | 'backend'
-    | 'api'
-    | 'database'
-    | 'tools'
-    | 'data'
-    | 'mobile'
-    | 'other';
+    | "frontend"
+    | "backend"
+    | "api"
+    | "database"
+    | "tools"
+    | "data"
+    | "mobile"
+    | "other";
   /** familiar = heard of, light exposure · beginner → advanced */
-  level: 'familiar' | 'beginner' | 'intermediate' | 'advanced';
+  level: "familiar" | "beginner" | "intermediate" | "advanced";
 }
 
 // Sample skills data organized by categories
@@ -35,7 +35,6 @@ export const skills: Skill[] = [
   { name: "PostgreSQL", category: "database", level: "intermediate" },
   { name: "Supabase", category: "database", level: "beginner" },
   { name: "MongoDB", category: "database", level: "familiar" },
-  
 
   // Tools & Technologies
   { name: "Git", category: "tools", level: "intermediate" },
@@ -44,6 +43,7 @@ export const skills: Skill[] = [
   { name: "Docker", category: "tools", level: "familiar" },
   { name: "Nginx", category: "tools", level: "familiar" },
   { name: "Cloudflare", category: "tools", level: "familiar" },
+  { name: "Oracle Cloud", category: "tools", level: "familiar" },
   { name: "Cron Jobs / Scheduling", category: "tools", level: "familiar" },
   { name: "Jenkins", category: "tools", level: "familiar" },
   { name: "Portainer.io", category: "tools", level: "familiar" },
