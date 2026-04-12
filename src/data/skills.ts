@@ -43,7 +43,7 @@ export const skills: Skill[] = [
   { name: "Docker", category: "tools", level: "familiar" },
   { name: "Nginx", category: "tools", level: "familiar" },
   { name: "Cloudflare", category: "tools", level: "familiar" },
-  { name: "Oracle Cloud", category: "tools", level: "familiar" },
+  { name: "Google Cloud Platform", category: "tools", level: "familiar" },
   { name: "Cron Jobs / Scheduling", category: "tools", level: "familiar" },
   { name: "Jenkins", category: "tools", level: "familiar" },
   { name: "Portainer.io", category: "tools", level: "familiar" },
