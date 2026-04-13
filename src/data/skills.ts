@@ -47,7 +47,7 @@ export const skills: Skill[] = [
   { name: "Cron Jobs / Scheduling", category: "tools", level: "familiar" },
   { name: "Jenkins", category: "tools", level: "familiar" },
   { name: "Portainer.io", category: "tools", level: "familiar" },
-  { name: "Kubernetes", category: "tools", level: "familiar" },
+  
 
   // Data / Sync
   { name: "PowerSync", category: "data", level: "familiar" },
