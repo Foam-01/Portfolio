@@ -13,12 +13,42 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: "1",
-    title: "📦 POS Inventory Management System",
+    title: "🧾 Point of Sale (POS) Interface",
     description:
-      "Full-stack system for managing products and inventory with React, Node.js, and PostgreSQL. Features include product CRUD, user roles (Admin/Staff), stock tracking, and JWT authentication.",
-    technologies: ["React", "Node.js", "Express", "PostgreSQL", "Bootstrap 5"],
-    imageUrl: "/images/inventory.png",
-    liveUrl: "",
+      "A user-friendly Point of Sale (POS) interface designed for real-time sales transactions. The system allows staff to quickly browse products, manage orders, and process sales efficiently. Integrated with a full-stack backend, it supports product management, stock tracking, role-based access (Admin/Staff), and secure JWT authentication.",
+    technologies: [
+      "React",
+      "Node.js",
+      "Express",
+      "PostgreSQL",
+      "Bootstrap 5",
+      "Nginx",
+      "Docker",
+      "GCP",
+    ],
+    imageUrl: "/images/inventory25.png",
+    liveUrl: "http://35.187.226.72/",
+    githubUrl:
+      "https://github.com/Foam-01/ReactAppWorkshopPOS?tab=readme-ov-file",
+    featured: true,
+  },
+  {
+    id: "23",
+    title: "📊 POS Backoffice Management System",
+    description:
+      "A comprehensive backoffice system for managing products, inventory, and user roles. Designed for administrators to monitor stock levels, perform product CRUD operations, and manage staff access. The system integrates seamlessly with the POS interface, ensuring real-time data synchronization and efficient business operations.",
+    technologies: [
+      "React",
+      "Node.js",
+      "Express",
+      "PostgreSQL",
+      "Bootstrap 5",
+      "Nginx",
+      "Docker",
+      "GCP",
+    ],
+    imageUrl: "/images/inventory26.png",
+    liveUrl: "http://35.187.226.72:8080/",
     githubUrl:
       "https://github.com/Foam-01/ReactAppWorkshopPOS?tab=readme-ov-file",
     featured: true,
@@ -68,7 +98,13 @@ export const projects: Project[] = [
     title: "🏆 Daily Effort Tracking App",
     description:
       "A personal performance tracking web app designed to record and evaluate daily effort across work, health, learning, and future goals. Built with React.js, featuring dynamic scoring, calendar visualization, and local storage for persistent data. Fully responsive and optimized for both desktop and mobile use.",
-    technologies: ["React.js", "JavaScript", "CSS","Vite", "Local Storage API"],
+    technologies: [
+      "React.js",
+      "JavaScript",
+      "CSS",
+      "Vite",
+      "Local Storage API",
+    ],
     imageUrl: "/images/inventory24.png",
     liveUrl: "https://daily-effort-tracking-app.netlify.app/",
     githubUrl: "https://github.com/Foam-01/Daily-Effort-Tracking-App",
