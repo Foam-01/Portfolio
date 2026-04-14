@@ -27,7 +27,7 @@ export const projects: Project[] = [
       "GCP",
     ],
     imageUrl: "/images/inventory25.png",
-    liveUrl: "http://35.187.226.72/",
+    liveUrl: "https://pos.skin/",
     githubUrl:
       "https://github.com/Foam-01/ReactAppWorkshopPOS?tab=readme-ov-file",
     featured: true,
@@ -48,7 +48,7 @@ export const projects: Project[] = [
       "GCP",
     ],
     imageUrl: "/images/inventory26.png",
-    liveUrl: "http://35.187.226.72:8080/",
+    liveUrl: "https://admin.pos.skin/",
     githubUrl:
       "https://github.com/Foam-01/ReactAppWorkshopPOS?tab=readme-ov-file",
     featured: true,
