@@ -55,5 +55,5 @@ export const skills: Skill[] = [
 
   // Mobile
   { name: "Flutter", category: "mobile", level: "familiar" },
-  { name: "React Native", category: "mobile", level: "familiar" },
+  
 ];
