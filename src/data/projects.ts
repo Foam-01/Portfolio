@@ -161,7 +161,7 @@ export const projects: Project[] = [
     id: "21",
     title: "📦 MyDownloader – Multi-Platform Video Downloader",
     description:
-      "A web-based video downloader that supports multiple platforms such as YouTube and Facebook using yt-dlp as the core engine. Built with a Flask backend and an HTML/JavaScript frontend, featuring real-time download progress, concurrent downloads, and automatic saving to the user’s Downloads folder.",
+      "A web-based video downloader that supports downloading videos from platforms such as Facebook and TikTok using yt-dlp as the core engine. Built with a Flask backend and an HTML/JavaScript frontend, featuring real-time download progress, concurrent downloads, and automatic saving to the user’s Downloads folder.",
     technologies: ["Python", "Flask", "HTML", "CSS", "JavaScript", "yt-dlp"],
     imageUrl: "/images/inventory21.png",
     liveUrl: "https://oneclickdownload.netlify.app/",
