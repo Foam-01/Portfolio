@@ -12,6 +12,28 @@ export interface Project {
 // Sample project data
 export const projects: Project[] = [
   {
+    id: "24",
+    title: "🎫 Orange Cat Lotto System",
+    description:
+      "A comprehensive, full-stack web application designed for lottery management. The system features real-time ticket inventory tracking, automated bonus checking, and shipment management. Built with a scalable architecture, it includes secure role-based access control (JWT) and dynamic financial reporting, deployed seamlessly across modern cloud infrastructure.",
+    technologies: [
+      "React",
+      "NestJS",
+      "Node.js",
+      "PostgreSQL",
+      "Supabase",
+      "Prisma",
+      "Bootstrap 5",
+      "Vercel",
+      "Render",
+      "Docker",
+    ],
+    imageUrl: "/images/inventory27.png",
+    liveUrl: "https://lotto-6hz7rs199-foam-01s-projects.vercel.app/", // ลิงก์ Vercel ล่าสุด (แก้โดเมนได้ถ้าเจ้านายไปตั้ง Custom Domain เพิ่ม)
+    githubUrl: "https://github.com/Foam-01/lotto",
+    featured: true,
+  },
+  {
     id: "1",
     title: "🧾 Point of Sale (POS) Interface",
     description:

@@ -39,6 +39,7 @@ export const skills: Skill[] = [
   // Tools & Technologies
   { name: "Git", category: "tools", level: "intermediate" },
   { name: "Netlify", category: "tools", level: "beginner" },
+  { name: "Vercel", category: "tools", level: "beginner" },
   { name: "Render", category: "tools", level: "beginner" },
   { name: "Docker", category: "tools", level: "familiar" },
   { name: "Nginx", category: "tools", level: "familiar" },
@@ -47,7 +48,6 @@ export const skills: Skill[] = [
   { name: "Cron Jobs / Scheduling", category: "tools", level: "familiar" },
   { name: "Jenkins", category: "tools", level: "familiar" },
   { name: "Portainer.io", category: "tools", level: "familiar" },
-  
 
   // Data / Sync
   { name: "PowerSync", category: "data", level: "familiar" },
@@ -55,5 +55,4 @@ export const skills: Skill[] = [
 
   // Mobile
   { name: "Flutter", category: "mobile", level: "familiar" },
-  
 ];
