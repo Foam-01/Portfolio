@@ -52,7 +52,7 @@ export const projects: Project[] = [
       "Jenkins",
     ],
     imageUrl: "/images/inventory25.png",
-    liveUrl: "https://pos.skin/",
+    liveUrl: "https://www.pos.skin/",
     githubUrl:
       "https://github.com/Foam-01/ReactAppWorkshopPOS?tab=readme-ov-file",
     featured: true,
