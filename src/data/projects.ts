@@ -144,7 +144,7 @@ export const projects: Project[] = [
     description:
       "A static website for learning basic English vocabulary with Thai meanings and pronunciation. Built using HTML, CSS, and JavaScript. Fully responsive and optimized for simplicity and speed.",
     technologies: ["HTML", "CSS", "JavaScript"],
-    imageUrl: "/images/inventory23.png",
+    imageUrl: "/images/inventory28.png",
     liveUrl: "https://thai-english-dictionary.netlify.app/",
     githubUrl:
       "https://github.com/Foam-01/Thai-English-Dictionary?tab=readme-ov-file",
