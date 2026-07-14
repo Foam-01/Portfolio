@@ -29,7 +29,7 @@ export const skills: Skill[] = [
 
   // API / Query
   { name: "GraphQL", category: "api", level: "familiar" },
-  { name: "Swagger", category: "api", level: "familiar" },
+  { name: "Swagger", category: "api", level: "intermediate" },
 
   // Database
   { name: "PostgreSQL", category: "database", level: "intermediate" },
