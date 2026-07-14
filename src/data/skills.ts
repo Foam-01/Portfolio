@@ -28,8 +28,9 @@ export const skills: Skill[] = [
   { name: "Socket.IO", category: "backend", level: "familiar" },
 
   // API / Query
-  { name: "GraphQL", category: "api", level: "familiar" },
   { name: "Swagger", category: "api", level: "intermediate" },
+  { name: "GraphQL", category: "api", level: "familiar" },
+  
 
   // Database
   { name: "PostgreSQL", category: "database", level: "intermediate" },
