@@ -34,6 +34,8 @@ export const skills: Skill[] = [
   // Database
   { name: "PostgreSQL", category: "database", level: "intermediate" },
   { name: "Supabase", category: "database", level: "beginner" },
+  { name: "DBeaver", category: "database", level: "beginner" },
+  { name: "SSMS", category: "database", level: "beginner" },
   { name: "MongoDB", category: "database", level: "familiar" },
   { name: "Neon", category: "database", level: "familiar" },
 

@@ -29,7 +29,7 @@ export const projects: Project[] = [
       "Docker",
     ],
     imageUrl: "/images/inventory27.png",
-    liveUrl: "https://lotto-6hz7rs199-foam-01s-projects.vercel.app/", // ลิงก์ Vercel ล่าสุด (แก้โดเมนได้ถ้าเจ้านายไปตั้ง Custom Domain เพิ่ม)
+    liveUrl: "", //"https://lotto-6hz7rs199-foam-01s-projects.vercel.app/", // ลิงก์ Vercel ล่าสุด (แก้โดเมนได้ถ้าเจ้านายไปตั้ง Custom Domain เพิ่ม)
     githubUrl: "https://github.com/Foam-01/lotto",
     featured: true,
   },
@@ -102,6 +102,31 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/Foam-01/Face-Blur",
     featured: true,
   },
+  {
+    id: "26",
+    title: "🛡️ AURA (AIRA User Rights Auditor)",
+    description:
+      "Enterprise Identity & Access Management (IAM) platform developed for AIRA Securities. Provides a unified employee search across 10+ enterprise systems with JWT authentication, Role-Based Access Control (RBAC), parallel data retrieval, audit logging, and legacy Informix integration.",
+    technologies: [
+      "React",
+      "NestJS",
+      "TypeScript",
+      "Prisma",
+      "SQL Server",
+      "JWT",
+      "Passport",
+      "Express.js",
+      "C#",
+      "Informix",
+      "Swagger",
+      "Tailwind CSS",
+    ],
+    imageUrl: "/images/inventory30.png",
+    liveUrl: "",
+    githubUrl: "https://github.com/Foam-01/aura",
+    featured: true,
+  },
+
   {
     id: "25",
     title: "💰 Student Savings System",

@@ -102,13 +102,7 @@ const Hero = React.memo(() => {
             className="text-lg sm:text-xl lg:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed"
             variants={itemVariants}
           >
-            Junior full-stack developer with 6-month front-end internship experience. 
-            Experienced in building responsive, user-friendly interfaces with a strong focus on UI/UX. 
-            Currently expanding expertise in 
-            <span className="text-indigo-600 font-semibold"> React</span>, 
-            <span className="text-indigo-600 font-semibold"> Node.js</span>, 
-            and 
-            <span className="text-indigo-600 font-semibold"> cloud technologies</span>.
+            {personalInfo.shortBio}
           </motion.p>
 
         {/* Call-to-Action Buttons */}
