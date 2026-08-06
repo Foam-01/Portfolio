@@ -29,7 +29,7 @@ export const projects: Project[] = [
       "Docker",
     ],
     imageUrl: "/images/inventory27.png",
-    liveUrl: "", //"https://lotto-6hz7rs199-foam-01s-projects.vercel.app/", // ลิงก์ Vercel ล่าสุด (แก้โดเมนได้ถ้าเจ้านายไปตั้ง Custom Domain เพิ่ม)
+    liveUrl: "https://lotto-6hz7rs199-foam-01s-projects.vercel.app/",
     githubUrl: "https://github.com/Foam-01/lotto",
     featured: true,
   },
