@@ -208,6 +208,19 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/Foam-01/Daily-Effort-Tracking-App",
     featured: true,
   },
+
+  {
+    id: "29",
+    title: "🛡️ ProdGate",
+    description:
+      "A modern React + Vite web application for production gate checklists, AI code review prompts, and maintainability guidelines. Includes a 41-point production readiness and code review checklist, master rules, interactive review cards, and one-click AI prompt copying.",
+    technologies: ["React 18", "Vite", "JavaScript", "CSS3"],
+    imageUrl: "/images/inventory32.png",
+    liveUrl: "https://prodgate.netlify.app/",
+    githubUrl: "https://github.com/Foam-01/ProdGate",
+    featured: false,
+  },
+
   {
     id: "2",
     title: "🧾 Thai-English Dictionary",
