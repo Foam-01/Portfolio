@@ -12,6 +12,51 @@ export interface Project {
 // Sample project data
 export const projects: Project[] = [
   {
+    id: "26",
+    title: "🛡️ AURA (AIRA User Rights Auditor)",
+    description:
+      "Enterprise Identity & Access Management (IAM) platform developed for AIRA Securities. Provides a unified employee search across 10+ enterprise systems with JWT authentication, Role-Based Access Control (RBAC), parallel data retrieval, audit logging, and legacy Informix integration.",
+    technologies: [
+      "React",
+      "NestJS",
+      "TypeScript",
+      "Prisma",
+      "SQL Server",
+      "JWT",
+      "Passport",
+      "Express.js",
+      "C#",
+      "Informix",
+      "Swagger",
+      "Tailwind CSS",
+    ],
+    imageUrl: "/images/inventory30.png",
+    liveUrl: "",
+    githubUrl: "https://github.com/Foam-01/aura",
+    featured: true,
+  },
+  {
+    id: "19",
+    title: "😎 Face Blur Detection App",
+    description:
+      "An AI-powered web application that detects and automatically blurs faces in uploaded images. Built with Angular (Frontend) and NestJS (Backend), integrated with PostgreSQL + Supabase, Swagger for API docs, and Docker for deployment.",
+    technologies: [
+      "Angular",
+      "NestJS",
+      "TypeScript",
+      "Tailwind CSS",
+      "Face-api.js",
+      "PostgreSQL",
+      "Supabase",
+      "Docker",
+      "Swagger",
+    ],
+    imageUrl: "/images/inventory19.png", // ใส่ path รูปภาพ thumbnail ของโปรเจกต์
+    liveUrl: "", // ถ้ามี demo ออนไลน์ให้ใส่ URL
+    githubUrl: "https://github.com/Foam-01/Face-Blur",
+    featured: true,
+  },
+  {
     id: "27",
     title: "⏱️ Focus Pulse - Executive Pomodoro & Relaxation System",
     description:
@@ -104,51 +149,8 @@ export const projects: Project[] = [
       "https://github.com/Foam-01/ReactAppWorkshopPOS?tab=readme-ov-file",
     featured: true,
   },
-  {
-    id: "19",
-    title: "😎 Face Blur Detection App",
-    description:
-      "An AI-powered web application that detects and automatically blurs faces in uploaded images. Built with Angular (Frontend) and NestJS (Backend), integrated with PostgreSQL + Supabase, Swagger for API docs, and Docker for deployment.",
-    technologies: [
-      "Angular",
-      "NestJS",
-      "TypeScript",
-      "Tailwind CSS",
-      "Face-api.js",
-      "PostgreSQL",
-      "Supabase",
-      "Docker",
-      "Swagger",
-    ],
-    imageUrl: "/images/inventory19.png", // ใส่ path รูปภาพ thumbnail ของโปรเจกต์
-    liveUrl: "", // ถ้ามี demo ออนไลน์ให้ใส่ URL
-    githubUrl: "https://github.com/Foam-01/Face-Blur",
-    featured: true,
-  },
-  {
-    id: "26",
-    title: "🛡️ AURA (AIRA User Rights Auditor)",
-    description:
-      "Enterprise Identity & Access Management (IAM) platform developed for AIRA Securities. Provides a unified employee search across 10+ enterprise systems with JWT authentication, Role-Based Access Control (RBAC), parallel data retrieval, audit logging, and legacy Informix integration.",
-    technologies: [
-      "React",
-      "NestJS",
-      "TypeScript",
-      "Prisma",
-      "SQL Server",
-      "JWT",
-      "Passport",
-      "Express.js",
-      "C#",
-      "Informix",
-      "Swagger",
-      "Tailwind CSS",
-    ],
-    imageUrl: "/images/inventory30.png",
-    liveUrl: "",
-    githubUrl: "https://github.com/Foam-01/aura",
-    featured: true,
-  },
+  
+  
 
   {
     id: "25",

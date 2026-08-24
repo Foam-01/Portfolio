@@ -2,6 +2,7 @@
 export const SECTION_IDS = {
   HERO: 'hero',
   ABOUT: 'about',
+  EXPERIENCE: 'experience',
   PROJECTS: 'projects',
   CONTACT: 'contact',
 } as const
@@ -9,6 +10,7 @@ export const SECTION_IDS = {
 export const NAVIGATION_LINKS = [
   { id: SECTION_IDS.HERO, label: 'Home' },
   { id: SECTION_IDS.ABOUT, label: 'About' },
+  { id: SECTION_IDS.EXPERIENCE, label: 'Experience' },
   { id: SECTION_IDS.PROJECTS, label: 'Projects' },
   { id: SECTION_IDS.CONTACT, label: 'Contact' },
 ]

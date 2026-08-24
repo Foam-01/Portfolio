@@ -3,6 +3,7 @@ import Footer from './components/common/Footer'
 import BackToTop from './components/common/BackToTop'
 import Hero from './components/sections/Hero'
 import About from './components/sections/About'
+import Experience from './components/sections/Experience'
 import Projects from './components/sections/Projects'
 import Contact from './components/sections/Contact'
 import { SECTION_IDS } from './utils/constants'
@@ -26,6 +27,9 @@ function App() {
 
       {/* About Section */}
       <About />
+
+      {/* Professional Experience Section */}
+      <Experience />
 
       {/* Projects Section */}
       <div id={SECTION_IDS.PROJECTS}>

@@ -42,6 +42,7 @@ const ProjectCard = React.memo(({ project, index = 0 }: ProjectCardProps) => {
       whileHover="hover"
       custom={index}
       viewport={{ once: true, margin: "-50px" }}
+      data-project-id={project.id}
     >
       {/* Project Image */}
       <div className="relative h-48 bg-gray-200 overflow-hidden">
