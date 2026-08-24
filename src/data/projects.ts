@@ -205,7 +205,7 @@ export const projects: Project[] = [
       "Vite",
       "Local Storage API",
     ],
-    imageUrl: "/images/inventory24.png",
+    imageUrl: "/images/inventory33.png",
     liveUrl: "https://daily-effort-tracking-app.netlify.app/",
     githubUrl: "https://github.com/Foam-01/Daily-Effort-Tracking-App",
     featured: true,
