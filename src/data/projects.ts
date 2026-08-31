@@ -149,8 +149,6 @@ export const projects: Project[] = [
       "https://github.com/Foam-01/ReactAppWorkshopPOS?tab=readme-ov-file",
     featured: true,
   },
-  
-  
 
   {
     id: "25",
@@ -209,6 +207,17 @@ export const projects: Project[] = [
     liveUrl: "https://daily-effort-tracking-app.netlify.app/",
     githubUrl: "https://github.com/Foam-01/Daily-Effort-Tracking-App",
     featured: true,
+  },
+  {
+    id: "30",
+    title: "🎭 AI Orchestrator Dashboard",
+    description:
+      "An enterprise-grade React + Vite dashboard for managing a 3-tier software engineering workflow. Includes 17 engineering skills, an 11-stage execution pipeline, project progress tracking, requirement handoff, and 41 quality control gates for systematic software development and production readiness.",
+    technologies: ["React 18", "Vite", "JavaScript", "CSS3"],
+    imageUrl: "/images/inventory34.png",
+    liveUrl: "https://ai-orchestrator-dashboard.netlify.app/",
+    githubUrl: "https://github.com/Foam-01/ai-orchestrator-dashboard",
+    featured: false,
   },
 
   {
