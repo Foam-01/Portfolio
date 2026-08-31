@@ -151,28 +151,6 @@ export const projects: Project[] = [
   },
 
   {
-    id: "25",
-    title: "💰 Student Savings System",
-    description:
-      "A full-stack simulated banking and budgeting system designed for classrooms. Features atomic deposit/withdrawal registers with secure student QR Code identification, a multi-bucket financial management workspace implementing automated 50/30/20 presets, a real-time compound interest projection tool, and a data-driven personal finance insights assistant.",
-    technologies: [
-      "React",
-      "Vite",
-      ".NET 8 Web API",
-      "C#",
-      "Entity Framework Core",
-      "PostgreSQL",
-      "Bootstrap 5",
-      "Chart.js",
-      "Swagger",
-    ],
-    imageUrl: "/images/inventory29.png",
-    liveUrl: "",
-    githubUrl: "https://github.com/Foam-01/student-savings",
-    featured: true,
-  },
-
-  {
     id: "22",
     title: "💇‍♀️ Beauty Salon Website",
     description:
@@ -242,6 +220,27 @@ export const projects: Project[] = [
     liveUrl: "https://thai-english-dictionary.netlify.app/",
     githubUrl:
       "https://github.com/Foam-01/Thai-English-Dictionary?tab=readme-ov-file",
+    featured: false,
+  },
+  {
+    id: "25",
+    title: "💰 Student Savings System",
+    description:
+      "A full-stack simulated banking and budgeting system designed for classrooms. Features atomic deposit/withdrawal registers with secure student QR Code identification, a multi-bucket financial management workspace implementing automated 50/30/20 presets, a real-time compound interest projection tool, and a data-driven personal finance insights assistant.",
+    technologies: [
+      "React",
+      "Vite",
+      ".NET 8 Web API",
+      "C#",
+      "Entity Framework Core",
+      "PostgreSQL",
+      "Bootstrap 5",
+      "Chart.js",
+      "Swagger",
+    ],
+    imageUrl: "/images/inventory29.png",
+    liveUrl: "",
+    githubUrl: "https://github.com/Foam-01/student-savings",
     featured: false,
   },
 
