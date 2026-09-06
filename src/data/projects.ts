@@ -74,7 +74,7 @@ export const projects: Project[] = [
       "Render",
     ],
     imageUrl: "/images/inventory31.png",
-    liveUrl: "https://focus-pulse-mu.vercel.app/",
+    // liveUrl: "https://focus-pulse-mu.vercel.app/",
     githubUrl: "https://github.com/Foam-01/Focus-Pulse",
     featured: true,
   },
