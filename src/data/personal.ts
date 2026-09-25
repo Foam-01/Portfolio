@@ -19,15 +19,15 @@ export const personalInfo: PersonalInfo = {
 
   // 🔥 ใช้สำหรับ Hero (สั้น)
   shortBio:
-    "Full-Stack Developer with hands-on experience building enterprise web applications and financial systems. Experienced in React, NestJS, C# (.NET), SQL Server, and system integration, with a strong focus on scalable backend development and clean user interfaces.",
+    "Full-Stack Developer with hands-on experience building enterprise ERP systems, financial reporting platforms, and web applications. Proficient in Next.js, React, Golang, Spring Boot, NestJS, C# (.NET), PostgreSQL, and SQL Server with a focus on end-to-end feature development and scalable backend architecture.",
 
   // 🔥 ใช้สำหรับ My Story (ยาว)
   bio: [
-    "I am a Full-Stack Developer passionate about building enterprise applications that solve real business problems. My professional journey began with frontend development and UX/UI design during a six-month remote internship, where I developed a strong foundation in creating intuitive and user-friendly web applications.",
+    "I am a Full-Stack Developer passionate about engineering enterprise applications that solve real business problems. My professional journey began with frontend development and UX/UI design during a 6-month remote internship, where I developed a strong foundation in creating intuitive, user-centric web applications and technical architecture diagrams.",
 
-    "Currently, I work as an IT Developer at AIRA Securities, contributing to enterprise authentication systems, financial reporting, data integration, and internal business applications. My work spans the full development lifecycle, including database design, backend services, frontend interfaces, and system integration using technologies such as React, NestJS, C# (.NET), PHP, SQL Server, and REST APIs.",
+    "At AIRA Securities, I contributed across two core engineering teams: Core ERP Engineering and Enterprise Application Development. My work spans building enterprise ERP systems, centralized RBAC authentication portals, data aggregation pipelines, TFEX MIS financial reporting, and accounting audit automation using technologies such as Next.js, React, Golang, Spring Boot, NestJS, C# (.NET), PHP, PostgreSQL, SQL Server, and REST APIs.",
 
-    "I enjoy designing scalable software, improving existing systems, and automating business processes. I continuously expand my technical knowledge through real-world projects and focus on building reliable, maintainable, and production-ready applications.",
+    "I enjoy designing scalable software architectures, improving existing systems, and automating complex business workflows. I continuously expand my technical capabilities through hands-on system development and focus on delivering reliable, maintainable, and production-ready applications.",
   ].join("\n\n"),
 
   email: "ddotdka4@gmail.com",

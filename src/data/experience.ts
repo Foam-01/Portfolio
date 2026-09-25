@@ -26,10 +26,48 @@ export interface Experience {
 
 export const experiences: Experience[] = [
   {
+    id: "exp-aira-erp",
+    position: "IT Developer",
+    company: "AIRA Securities",
+    companyFull: "AIRA Securities Public Company Limited",
+    workType: "Full-time",
+    duration: "August 2026 – September 2026 · 2 Months",
+    durationShort: "Aug 2026 – Sep 2026",
+    description:
+      "Engineered enterprise ERP systems and delivered full-stack features across frontend, backend, and database architecture.",
+    subtitle: "ERP System Development",
+    contributions: [
+      {
+        number: "01",
+        title: "Core ERP Engineering",
+        bullets: [
+          "Developed and maintained enterprise ERP systems utilizing Next.js, Go (Golang), Spring Boot, and PostgreSQL.",
+        ],
+      },
+      {
+        number: "02",
+        title: "Full-Stack Development",
+        bullets: [
+          "Implemented end-to-end features and resolved complex bugs across frontend, backend, and database layers based on business requirements.",
+        ],
+      },
+    ],
+    technologies: [
+      "Next.js",
+      "Go (Golang)",
+      "Spring Boot",
+      "PostgreSQL",
+      "React",
+      "Tailwind CSS",
+      "REST API",
+    ],
+  },
+  {
     id: "exp-1",
     position: "IT Developer",
     company: "AIRA Securities",
     companyFull: "AIRA Securities Public Company Limited",
+    workType: "Full-time",
     duration: "June 2026 – July 2026 · 2 Months",
     durationShort: "Jun 2026 – Jul 2026",
     description:
@@ -98,10 +136,6 @@ export const experiences: Experience[] = [
       "XML",
       "CSV",
     ],
-    relatedProject: {
-      title: "AURA (AIRA User Rights Auditor)",
-      id: "26",
-    },
   },
   {
     id: "exp-2",
@@ -112,40 +146,35 @@ export const experiences: Experience[] = [
     duration: "August 13, 2025 – February 13, 2026 · 6 Months",
     durationShort: "Aug 2025 – Feb 2026",
     description:
-      "Worked remotely as a Frontend Developer and UX/UI Designer, contributing to user-centered web application design and frontend development in an Agile environment.",
+      "Collaborated in a remote environment, specializing in full-cycle design and development of user-centric web applications.",
     subtitle: "UX/UI & Frontend Development",
     contributions: [
       {
         number: "01",
-        title: "UX/UI Design",
+        title: "UX/UI Architecture",
         bullets: [
-          "Designed high-fidelity wireframes and user flows using Figma and FigJam.",
-          "Created technical system sequence diagrams using Mermaid.",
-          "Designed user-centered interfaces with a focus on usability and interaction flow.",
+          "Designed high-fidelity wireframes and user flows using Figma and FigJam, utilizing Mermaid for technical system sequence diagrams.",
         ],
       },
       {
         number: "02",
         title: "Frontend Development",
         bullets: [
-          "Developed responsive web interfaces using Angular and Tailwind CSS.",
-          "Applied modular component design to improve maintainability and user interaction.",
+          "Developed responsive web interfaces using Angular and Tailwind CSS, focusing on modular component design and seamless user interaction.",
         ],
       },
       {
         number: "03",
         title: "System Visualization",
         bullets: [
-          "Created architectural and workflow diagrams to visualize complex system logic.",
-          "Improved communication between design and development teams through structured visual documentation.",
+          "Streamlined communication between design and development teams by creating clear architectural diagrams to visualize complex logic.",
         ],
       },
       {
         number: "04",
-        title: "Remote Collaboration",
+        title: "Remote Efficiency",
         bullets: [
-          "Worked 100% remotely within an Agile environment.",
-          "Managed tasks independently and maintained development progress through effective time management.",
+          "Demonstrated high self-discipline and task management while working 100% remotely in an agile environment.",
         ],
       },
     ],
