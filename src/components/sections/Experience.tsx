@@ -52,6 +52,7 @@ const erpWorkSamples = [
 
 const Experience = React.memo(() => {
   const [isErpPreviewOpen, setIsErpPreviewOpen] = React.useState(false)
+  const [isErpPreviewLoading, setIsErpPreviewLoading] = React.useState(true)
   const [selectedErpSample, setSelectedErpSample] = React.useState(erpWorkSamples[0])
 
   React.useEffect(() => {
@@ -243,7 +244,10 @@ const Experience = React.memo(() => {
                       <div className="pt-3 border-t border-gray-100">
                         <button
                           type="button"
-                          onClick={() => setIsErpPreviewOpen(true)}
+                          onClick={() => {
+                            setIsErpPreviewLoading(true)
+                            setIsErpPreviewOpen(true)
+                          }}
                           className="group inline-flex min-h-12 items-center gap-3 rounded-lg border border-indigo-200 bg-white px-3 py-2 text-left text-sm font-semibold text-gray-900 shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:border-indigo-400 hover:bg-indigo-50/70 hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2 active:translate-y-0"
                         >
                           <span className="flex h-9 w-9 items-center justify-center rounded-md bg-indigo-50 text-indigo-700 transition-colors group-hover:bg-indigo-100">
@@ -333,7 +337,10 @@ const Experience = React.memo(() => {
                     key={sample.title}
                     type="button"
                     aria-pressed={selectedErpSample.title === sample.title}
-                    onClick={() => setSelectedErpSample(sample)}
+                    onClick={() => {
+                      setIsErpPreviewLoading(true)
+                      setSelectedErpSample(sample)
+                    }}
                     className={`min-h-[44px] shrink-0 rounded-md px-3 py-2 text-left text-sm transition-colors md:w-full ${selectedErpSample.title === sample.title
                       ? 'bg-indigo-50 font-semibold text-indigo-700 ring-1 ring-indigo-200'
                       : 'text-gray-700 hover:bg-gray-100'
@@ -345,12 +352,25 @@ const Experience = React.memo(() => {
               </nav>
 
               <div className="min-h-0 bg-gray-100 p-2 sm:p-4">
-                <iframe
-                  key={selectedErpSample.url}
-                  src={`${selectedErpSample.url}#toolbar=0&navpanes=0`}
-                  title={`PDF preview: ${selectedErpSample.title}`}
-                  className="h-full w-full rounded border border-gray-300 bg-white"
-                />
+                <div className="relative h-full min-h-0">
+                  <iframe
+                    key={selectedErpSample.url}
+                    src={`${selectedErpSample.url}#toolbar=0&navpanes=0`}
+                    title={`PDF preview: ${selectedErpSample.title}`}
+                    onLoad={() => setIsErpPreviewLoading(false)}
+                    className={`h-full w-full rounded border border-gray-300 bg-white transition-opacity ${isErpPreviewLoading ? 'opacity-0' : 'opacity-100'}`}
+                  />
+                  {isErpPreviewLoading && (
+                    <div
+                      className="absolute inset-0 flex flex-col items-center justify-center gap-3 rounded border border-gray-200 bg-white text-gray-600"
+                      role="status"
+                      aria-live="polite"
+                    >
+                      <span className="h-8 w-8 animate-spin rounded-full border-4 border-indigo-100 border-t-indigo-600" />
+                      <span className="text-sm font-medium">กำลังโหลดตัวอย่าง...</span>
+                    </div>
+                  )}
+                </div>
               </div>
             </div>
           </section>
