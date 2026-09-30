@@ -56,28 +56,7 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/Foam-01/Face-Blur",
     featured: true,
   },
-  {
-    id: "27",
-    title: "⏱️ Focus Pulse - Executive Pomodoro & Relaxation System",
-    description:
-      "A modern, full-stack executive productivity application designed for focus management, session tracking, and ambient stress relief. The system features a customizable Pomodoro timer with direct typing stepper, interactive goal progress ring, real-time analytics dashboards, and an automated ambient video relaxation library upon session completion. Built with enterprise-grade architecture, it includes secure Supabase authentication with 2FA TOTP security, deployed seamlessly across Vercel and Render.",
-    technologies: [
-      "Next.js",
-      "React",
-      "NestJS",
-      "TypeScript",
-      "PostgreSQL",
-      "Supabase",
-      "Prisma",
-      "Vanilla CSS",
-      "Vercel",
-      "Render",
-    ],
-    imageUrl: "/images/inventory31.png",
-    // liveUrl: "https://focus-pulse-mu.vercel.app/",
-    githubUrl: "https://github.com/Foam-01/Focus-Pulse",
-    featured: true,
-  },
+  
 
   {
     id: "24",
@@ -147,6 +126,28 @@ export const projects: Project[] = [
     liveUrl: "https://admin.pos.skin/",
     githubUrl:
       "https://github.com/Foam-01/ReactAppWorkshopPOS?tab=readme-ov-file",
+    featured: true,
+  },
+  {
+    id: "27",
+    title: "⏱️ Focus Pulse - Executive Pomodoro & Relaxation System",
+    description:
+      "A modern, full-stack executive productivity application designed for focus management, session tracking, and ambient stress relief. The system features a customizable Pomodoro timer with direct typing stepper, interactive goal progress ring, real-time analytics dashboards, and an automated ambient video relaxation library upon session completion. Built with enterprise-grade architecture, it includes secure Supabase authentication with 2FA TOTP security, deployed seamlessly across Vercel and Render.",
+    technologies: [
+      "Next.js",
+      "React",
+      "NestJS",
+      "TypeScript",
+      "PostgreSQL",
+      "Supabase",
+      "Prisma",
+      "Vanilla CSS",
+      "Vercel",
+      "Render",
+    ],
+    imageUrl: "/images/inventory31.png",
+    // liveUrl: "https://focus-pulse-mu.vercel.app/",
+    githubUrl: "https://github.com/Foam-01/Focus-Pulse",
     featured: true,
   },
 
