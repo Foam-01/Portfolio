@@ -119,7 +119,7 @@ export const projects: Project[] = [
       "Portainer.io",
       "Jenkins",
     ],
-    imageUrl: "/images/inventory25.png",
+    imageUrl: "/images/inventory36.png",
     liveUrl: "https://www.pos.skin/",
     githubUrl:
       "https://github.com/Foam-01/ReactAppWorkshopPOS?tab=readme-ov-file",
