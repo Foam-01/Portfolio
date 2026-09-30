@@ -58,5 +58,5 @@ export const skills: Skill[] = [
   { name: "RxDB", category: "data", level: "familiar" },
 
   // Mobile
-  { name: "Flutter", category: "mobile", level: "familiar" },
+  { name: "Flutter", category: "mobile", level: "beginner" },
 ];

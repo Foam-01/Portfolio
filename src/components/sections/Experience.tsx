@@ -1,5 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import { FiArrowUpRight, FiEye } from 'react-icons/fi'
 import { experiences } from '../../data/experience'
 import { SECTION_IDS, SCROLL_OFFSET } from '../../utils/constants'
 import { smoothScrollToSection } from '../../utils/dataHelpers'
@@ -39,7 +40,31 @@ const dotVariants = {
   }
 }
 
+const erpWorkSamples = [
+  { title: 'Sample 01', url: new URL('../../../erp-work-samples/HAP-14-15-9-69.pdf', import.meta.url).href },
+  { title: 'Sample 02', url: new URL('../../../erp-work-samples/HAP-16-18-9-69.pdf', import.meta.url).href },
+  { title: 'Sample 03', url: new URL('../../../erp-work-samples/HAP-19-9-69.pdf', import.meta.url).href },
+  { title: 'Sample 04', url: new URL('../../../erp-work-samples/HAP-21969.pdf', import.meta.url).href },
+  { title: 'Sample 05', url: new URL('../../../erp-work-samples/HAP-22969.pdf', import.meta.url).href },
+  { title: 'Sample 06', url: new URL('../../../erp-work-samples/HAP-23969.pdf', import.meta.url).href },
+  { title: 'Sample 07', url: new URL('../../../erp-work-samples/HAP-24969.pdf', import.meta.url).href },
+]
+
 const Experience = React.memo(() => {
+  const [isErpPreviewOpen, setIsErpPreviewOpen] = React.useState(false)
+  const [selectedErpSample, setSelectedErpSample] = React.useState(erpWorkSamples[0])
+
+  React.useEffect(() => {
+    if (!isErpPreviewOpen) return
+
+    const closeOnEscape = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') setIsErpPreviewOpen(false)
+    }
+
+    window.addEventListener('keydown', closeOnEscape)
+    return () => window.removeEventListener('keydown', closeOnEscape)
+  }, [isErpPreviewOpen])
+
   const scrollToProject = (projectId: string) => {
     // Scroll to projects section first
     smoothScrollToSection(SECTION_IDS.PROJECTS, SCROLL_OFFSET)
@@ -67,7 +92,7 @@ const Experience = React.memo(() => {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-            Professional Experience
+            Work Experience
           </h2>
           <motion.div
             className="w-24 h-1 bg-indigo-600 mx-auto mb-6"
@@ -77,7 +102,7 @@ const Experience = React.memo(() => {
             transition={{ delay: 0.3, duration: 0.8 }}
           ></motion.div>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            My professional journey through enterprise application development, UX/UI design, and frontend engineering.
+            My work has covered enterprise ERP and internal business applications, including full-stack development, data integration, reporting, and user-focused interface improvements.
           </p>
         </motion.div>
 
@@ -98,9 +123,8 @@ const Experience = React.memo(() => {
               {/* Timeline connector line — spans the full height of this entry */}
               {/* Desktop: centered between columns, Mobile: left side */}
               <div
-                className={`absolute left-4 lg:left-[22%] top-0 bottom-0 w-0.5 bg-indigo-200 ${
-                  index === experiences.length - 1 ? 'hidden' : ''
-                }`}
+                className={`absolute left-4 lg:left-[22%] top-0 bottom-0 w-0.5 bg-indigo-200 ${index === experiences.length - 1 ? 'hidden' : ''
+                  }`}
                 style={{ transform: 'translateX(-50%)' }}
               />
 
@@ -215,6 +239,29 @@ const Experience = React.memo(() => {
                       </div>
                     </div>
 
+                    {exp.id === 'exp-aira-erp' && (
+                      <div className="pt-3 border-t border-gray-100">
+                        <button
+                          type="button"
+                          onClick={() => setIsErpPreviewOpen(true)}
+                          className="group inline-flex min-h-12 items-center gap-3 rounded-lg border border-indigo-200 bg-white px-3 py-2 text-left text-sm font-semibold text-gray-900 shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:border-indigo-400 hover:bg-indigo-50/70 hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2 active:translate-y-0"
+                        >
+                          <span className="flex h-9 w-9 items-center justify-center rounded-md bg-indigo-50 text-indigo-700 transition-colors group-hover:bg-indigo-100">
+                            <FiEye aria-hidden="true" size={18} />
+                          </span>
+                          <span>Preview ERP work</span>
+                          <span className="rounded-full bg-gray-100 px-2 py-1 text-xs font-medium text-gray-600 group-hover:bg-white">
+                            7 samples
+                          </span>
+                          <FiArrowUpRight
+                            aria-hidden="true"
+                            className="text-gray-400 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-indigo-700"
+                            size={16}
+                          />
+                        </button>
+                      </div>
+                    )}
+
                     {/* Related Project Link */}
                     {exp.relatedProject && (
                       <div className="pt-3 border-t border-gray-100">
@@ -246,6 +293,69 @@ const Experience = React.memo(() => {
           ))}
         </motion.div>
       </div>
+
+      {isErpPreviewOpen && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/75 p-3 sm:p-6"
+          onClick={() => setIsErpPreviewOpen(false)}
+        >
+          <section
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="erp-preview-title"
+            className="flex h-[92vh] w-full max-w-7xl flex-col overflow-hidden rounded-lg bg-white shadow-2xl"
+            onClick={(event) => event.stopPropagation()}
+          >
+            <header className="flex items-center justify-between gap-4 border-b border-gray-200 px-4 py-3 sm:px-6">
+              <div>
+                <h3 id="erp-preview-title" className="text-lg font-bold text-gray-900">
+                  ERP Work Examples
+                </h3>
+                <p className="text-sm text-gray-500">{selectedErpSample.title}</p>
+              </div>
+              <button
+                type="button"
+                onClick={() => setIsErpPreviewOpen(false)}
+                className="min-h-[44px] min-w-[44px] rounded-md px-3 text-sm font-medium text-gray-700 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                aria-label="Close ERP work samples preview"
+              >
+                Close
+              </button>
+            </header>
+
+            <div className="grid min-h-0 flex-1 grid-rows-[auto_minmax(0,1fr)] md:grid-cols-[220px_minmax(0,1fr)] md:grid-rows-1">
+              <nav
+                aria-label="Select an ERP work sample"
+                className="flex gap-2 overflow-x-auto border-b border-gray-200 p-3 md:flex-col md:overflow-y-auto md:border-b-0 md:border-r"
+              >
+                {erpWorkSamples.map((sample) => (
+                  <button
+                    key={sample.title}
+                    type="button"
+                    aria-pressed={selectedErpSample.title === sample.title}
+                    onClick={() => setSelectedErpSample(sample)}
+                    className={`min-h-[44px] shrink-0 rounded-md px-3 py-2 text-left text-sm transition-colors md:w-full ${selectedErpSample.title === sample.title
+                      ? 'bg-indigo-50 font-semibold text-indigo-700 ring-1 ring-indigo-200'
+                      : 'text-gray-700 hover:bg-gray-100'
+                      }`}
+                  >
+                    {sample.title}
+                  </button>
+                ))}
+              </nav>
+
+              <div className="min-h-0 bg-gray-100 p-2 sm:p-4">
+                <iframe
+                  key={selectedErpSample.url}
+                  src={`${selectedErpSample.url}#toolbar=0&navpanes=0`}
+                  title={`PDF preview: ${selectedErpSample.title}`}
+                  className="h-full w-full rounded border border-gray-300 bg-white"
+                />
+              </div>
+            </div>
+          </section>
+        </div>
+      )}
     </section>
   )
 })
