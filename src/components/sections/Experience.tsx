@@ -103,6 +103,22 @@ const Experience = React.memo(() => {
     return () => window.removeEventListener('keydown', closeOnEscape)
   }, [isErpPreviewOpen])
 
+  // Start downloading the samples shortly after the page has finished loading,
+  // so they're ready before the viewer reaches the ERP preview
+  React.useEffect(() => {
+    let timeoutId: number | undefined
+    const start = () => {
+      // Short delay keeps the prefetch from competing with the page's own images and fonts
+      timeoutId = window.setTimeout(() => prefetchErpSample(erpWorkSamples[0].url, true), 1500)
+    }
+    if (document.readyState === 'complete') start()
+    else window.addEventListener('load', start, { once: true })
+    return () => {
+      window.removeEventListener('load', start)
+      if (timeoutId !== undefined) window.clearTimeout(timeoutId)
+    }
+  }, [])
+
   React.useEffect(() => {
     if (isErpPreviewOpen) prefetchErpSample(erpWorkSamples[0].url, true)
   }, [isErpPreviewOpen])
