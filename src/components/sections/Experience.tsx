@@ -256,7 +256,7 @@ const Experience = React.memo(() => {
                           </span>
                           <span>Preview ERP work</span>
                           <span className="rounded-full bg-gray-100 px-2 py-1 text-xs font-medium text-gray-600 group-hover:bg-white">
-                            7 samples
+                            {erpWorkSamples.length} samples
                           </span>
                           <FiArrowUpRight
                             aria-hidden="true"
