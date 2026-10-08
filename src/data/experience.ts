@@ -91,7 +91,7 @@ export const experiences: Experience[] = [
       "PostgreSQL",
       "REST API",
       "Docker",
-      "Git",
+      "GitHub Desktop",
     ],
   },
   {
