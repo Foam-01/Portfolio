@@ -19,13 +19,13 @@ export const skills: Skill[] = [
   { name: "React", category: "frontend", level: "intermediate" },
   { name: "Tailwind CSS", category: "frontend", level: "intermediate" },
   { name: "Bootstrap 5", category: "frontend", level: "intermediate" },
-  { name: "Next.js", category: "frontend", level: "beginner" },
+  { name: "Next.js", category: "frontend", level: "intermediate" },
 
   // Backend
   { name: "Node.js", category: "backend", level: "intermediate" },
   { name: "Express.js", category: "backend", level: "intermediate" },
   { name: "NestJS", category: "backend", level: "beginner" },
-  { name: "Socket.IO", category: "backend", level: "familiar" },
+
 
   // API / Query
   { name: "Swagger", category: "api", level: "intermediate" },
