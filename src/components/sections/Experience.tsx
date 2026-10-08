@@ -48,6 +48,7 @@ const erpWorkSamples = [
   { title: 'Sample 05', url: new URL('../../../erp-work-samples/HAP-22969.pdf', import.meta.url).href },
   { title: 'Sample 06', url: new URL('../../../erp-work-samples/HAP-23969.pdf', import.meta.url).href },
   { title: 'Sample 07', url: new URL('../../../erp-work-samples/HAP-24969.pdf', import.meta.url).href },
+  { title: 'Sample 08', url: new URL('../../../erp-work-samples/t180d3k7myqadak.pdf', import.meta.url).href },
 ]
 
 const Experience = React.memo(() => {
