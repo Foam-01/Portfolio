@@ -19,7 +19,7 @@ export const personalInfo: PersonalInfo = {
 
   // 🔥 ใช้สำหรับ Hero (สั้น)
   shortBio:
-    "Full-Stack Developer with hands-on experience building enterprise ERP systems, financial reporting platforms, and web applications. Proficient in Next.js, React, Golang, Spring Boot, NestJS, C# (.NET), PostgreSQL, and SQL Server with a focus on end-to-end feature development and scalable backend architecture.",
+    "Full-Stack Developer with hands-on experience building enterprise ERP systems, financial reporting platforms, and web applications. Proficient in Next.js, React, Golang, Spring Boot, NestJS, C# (.NET), PostgreSQL, and SQL Server with a focus on end-to-end feature development.",
 
   // 🔥 ใช้สำหรับ My Story (ยาว)
   bio: [
@@ -27,7 +27,7 @@ export const personalInfo: PersonalInfo = {
 
     "At AIRA Securities, I contributed across two core engineering teams: Core ERP Engineering and Enterprise Application Development. My work spans building enterprise ERP systems, centralized RBAC authentication portals, data aggregation pipelines, TFEX MIS financial reporting, and accounting audit automation using technologies such as Next.js, React, Golang, Spring Boot, NestJS, C# (.NET), PHP, PostgreSQL, SQL Server, and REST APIs.",
 
-    "I enjoy designing scalable software architectures, improving existing systems, and automating complex business workflows. I continuously expand my technical capabilities through hands-on system development and focus on delivering reliable, maintainable, and production-ready applications.",
+    "I enjoy improving existing business systems and automating complex workflows. I continuously expand my technical capabilities through hands-on system development and focus on delivering reliable, maintainable, and production-ready applications.",
   ].join("\n\n"),
 
   email: "ddotdka4@gmail.com",

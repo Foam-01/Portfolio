@@ -57,7 +57,7 @@ export const experiences: Experience[] = [
         number: "03",
         title: "Bug Fixing & Data Integrity",
         bullets: [
-          "Investigated and fixed bugs across every layer of the system: UI behavior, frontend–backend API contracts, and data/SQL issues.",
+          "Investigated and fixed bugs across the frontend, backend, and database: UI behavior, frontend–backend API contracts, and data/SQL issues.",
           "Fixed problems at the root cause rather than the symptom, and added tests to prevent regressions.",
         ],
       },
@@ -72,7 +72,7 @@ export const experiences: Experience[] = [
         number: "05",
         title: "Performance Optimization",
         bullets: [
-          "Analyzed every performance issue before changing code: identified the root cause, assessed the impact, and proposed solutions with their pros, cons, and risks, without changing the UI, UX, or business logic.",
+          "Analyzed performance issues before changing code: identified the root cause, assessed the impact, and proposed solutions with their pros, cons, and risks, without changing the UI, UX, or business logic.",
           "Frontend: Reviewed SSR/CSR usage, JavaScript bundle size, duplicate requests, and unnecessary re-renders. Added lazy loading for images entering the viewport, disabled unnecessary prefetching, and added skeleton loading states.",
           "Backend/Database: Reviewed API response times, slow queries, N+1 queries, pagination, indexes, and connection pooling.",
           "Media: Compressed images in the browser before upload, and added cache headers (Cache-Control, ETag, Last-Modified) so the backend returns 304 Not Modified for unchanged images.",
@@ -91,7 +91,7 @@ export const experiences: Experience[] = [
       "PostgreSQL",
       "REST API",
       "Docker",
-      "GitHub Desktop",
+      "GitHub",
     ],
   },
   {

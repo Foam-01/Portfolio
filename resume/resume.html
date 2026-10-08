@@ -1,0 +1,69 @@
+﻿<!doctype html><html><head><meta charset="utf-8"><title>Sitthidech Thongsawang – Resume</title>
+<style>
+@page{size:A4;margin:10mm 13mm}
+*{box-sizing:border-box}body{font-family:"Segoe UI",Arial,sans-serif;color:#1f2937;font-size:9.3pt;line-height:1.34;margin:0}
+h1{font-size:21pt;margin:0;color:#111827;letter-spacing:.2px}
+.role{font-size:11pt;color:#4338ca;font-weight:600;margin:1px 0 4px}
+.contact{font-size:8.8pt;color:#4b5563}.contact a{color:#4b5563;text-decoration:none}
+h2{font-size:10.5pt;text-transform:uppercase;letter-spacing:1px;color:#4338ca;border-bottom:1.2px solid #c7d2fe;padding-bottom:2px;margin:9px 0 4px}
+.job{margin-bottom:7px}.jh{display:flex;justify-content:space-between;align-items:baseline}
+.jt{font-weight:700;font-size:10pt;color:#111827}.jd{font-size:8.8pt;color:#6b7280;white-space:nowrap}
+.js{color:#4b5563;font-style:italic;font-size:9pt;margin-bottom:2px}
+ul{margin:2px 0 0 15px;padding:0}li{margin:1px 0}
+.tech{font-size:8.6pt;color:#4b5563;margin-top:2px}.tech b{color:#374151}
+.skills div{margin:1.5px 0}.skills b{display:inline-block;width:105px;color:#111827}
+p{margin:0}
+</style></head><body>
+<h1>Sitthidech Thongsawang</h1>
+<div class="role">Junior Full-Stack Developer</div>
+<div class="contact">Phitsanulok, Thailand &nbsp;·&nbsp; +66 61 286 3184 &nbsp;·&nbsp; ddotdka4@gmail.com<br> <a href="https://portfoliof-01.netlify.app/">portfoliof-01.netlify.app</a> &nbsp;·&nbsp; <a href="https://github.com/Foam-01">github.com/Foam-01</a> &nbsp;·&nbsp; <a href="https://www.linkedin.com/in/sitthidet-thongsawang-28524630a/">linkedin.com/in/sitthidet-thongsawang</a> &nbsp;·&nbsp; Open to Remote &amp; On-site</div>
+
+<h2>Summary</h2>
+<p>Full-Stack Developer with hands-on experience building enterprise ERP systems, financial reporting, and internal business applications at a securities company. Works across frontend, backend, and database layers with Next.js, React, Go, Spring Boot, NestJS, C# (.NET), PostgreSQL, and SQL Server, with a background in UX/UI design.</p>
+
+<h2>Experience</h2>
+<div class="job"><div class="jh"><span class="jt">IT Developer — AIRA Securities Public Company Limited</span><span class="jd">Jun 2026 – Sep 2026 (4 months) · Full-time</span></div>
+<div class="js">ERP System Development (Aug – Sep 2026) — HR, CRM, Procurement, Warehouse, and Accounting modules</div>
+<ul>
+<li>Built features end to end from business requirements: UI, REST APIs, business logic, and PostgreSQL queries; created reusable data tables, forms, and modals with filtering and pagination.</li>
+<li>Brought features started by senior developers to production quality (UI states, validation, edge cases, responsive layouts) across multi-step flows: Sales → Quotation → Project → Procurement → Warehouse → Accounting.</li>
+<li>Fixed bugs across the frontend, backend, and database at the root cause, adding tests to prevent regressions; built mobile screens for warehouse, transport, and on-site receiving staff.</li>
+<li>Performance: cut the employee directory's initial load from ~7 MB to ~1.8 MB (previously ~270 requests / ~57 MB when scrolling the full list) and asset-requisition uploads from ~1 MB to ~200 KB via lazy loading, client-side image compression, and HTTP caching (ETag / 304).</li>
+</ul>
+<div class="tech"><b>Tech:</b> Next.js, React, TypeScript, Tailwind CSS, Go, Spring Boot, PostgreSQL, REST API, Docker, GitHub</div>
+<div class="js" style="margin-top:5px">Enterprise Application Development (Jun – Jul 2026)</div>
+<ul>
+<li>Developed a centralized Authentication &amp; RBAC portal unifying user search across 10+ internal systems; analyzed auth and RBAC workflows across 14 systems.</li>
+<li>Built a data aggregation service combining the SBA database and external APIs to calculate customer net balances, with scheduled monthly processing and automated report files.</li>
+<li>Enhanced TFEX MIS Report R2643 across SQL Server schema, XML import, backend processing, and CSV export; added Cost Value, Market Value, and Other Collateral Movement data.</li>
+<li>Produced 6 quarterly Accounting Audit reports (Q2 2026) consolidated from SQL Server, Smart System, and TFEX MIS.</li>
+</ul>
+<div class="tech"><b>Tech:</b> C# / .NET, NestJS, React, PHP, SQL Server, REST API, Cron Jobs, XML, CSV</div></div>
+
+<div class="job"><div class="jh"><span class="jt">Frontend Developer &amp; UX/UI Designer (Intern) — indistinct</span><span class="jd">Aug 2025 – Feb 2026 (6 months) · Remote</span></div>
+<ul>
+<li>Designed wireframes and user flows in Figma / FigJam and system sequence diagrams in Mermaid.</li>
+<li>Developed responsive, component-based web interfaces with Angular and Tailwind CSS in an agile, fully remote team.</li>
+</ul></div>
+
+<h2>Education</h2>
+<div class="jh"><span class="jt">Bachelor of Engineering (B.Eng.) in Computer Engineering — Pibulsongkram Rajabhat University</span></div>
+<div>Cumulative GPA 3.59 / 4.00 (Second Class Honors) &nbsp;·&nbsp; Major GPA 3.68</div>
+
+<h2>Selected Projects</h2>
+<ul>
+<li><b>AURA – AIRA User Rights Auditor:</b> IAM platform with unified employee search across 10+ systems, JWT auth, RBAC, parallel data retrieval, audit logging, and legacy Informix integration. <i>React, NestJS, Prisma, SQL Server, C#</i></li>
+<li><b>POS &amp; Backoffice System:</b> sales interface plus inventory/user management with JWT and Admin/Staff roles, deployed with Docker, Nginx, Jenkins CI/CD on GCP behind Cloudflare. <i>React, Express, PostgreSQL</i></li>
+<li><b>Orange Cat Lotto System:</b> lottery management with ticket inventory, bonus checking, shipments, and financial reports. <i>React, NestJS, Prisma, PostgreSQL (Supabase), Vercel, Render</i></li>
+<li><b>Focus Pulse:</b> productivity app with Pomodoro timer, analytics dashboards, and Supabase auth with 2FA TOTP. <i>Next.js, NestJS, Prisma, PostgreSQL</i></li>
+</ul>
+
+<h2>Skills</h2>
+<div class="skills">
+<div><b>Frontend</b>Next.js, React, Angular, TypeScript, Tailwind CSS, Bootstrap 5</div>
+<div><b>Backend</b>Go, Spring Boot, NestJS, Node.js / Express, C# (.NET), PHP, REST API, GraphQL, Swagger</div>
+<div><b>Database</b>PostgreSQL, SQL Server, MongoDB, Supabase, Prisma</div>
+<div><b>DevOps &amp; Tools</b>Git / GitHub, Docker, Nginx, Jenkins, GCP, Cloudflare, Vercel, Netlify, Render</div>
+<div><b>Design</b>Figma, FigJam, Mermaid</div>
+</div>
+</body></html>
