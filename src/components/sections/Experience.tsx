@@ -51,6 +51,42 @@ const erpWorkSamples = [
   { title: 'Sample 08', url: new URL('../../../erp-work-samples/t180d3k7myqadak.pdf', import.meta.url).href },
 ]
 
+// Warm the browser cache one PDF at a time, so the sample the viewer is about to open
+// isn't competing for bandwidth with the rest
+const prefetchedErpSamples = new Set<string>()
+const erpPrefetchQueue: string[] = []
+let isErpPrefetching = false
+
+const runErpPrefetchQueue = async () => {
+  if (isErpPrefetching) return
+  isErpPrefetching = true
+  while (erpPrefetchQueue.length > 0) {
+    const url = erpPrefetchQueue.shift()!
+    if (prefetchedErpSamples.has(url)) continue
+    prefetchedErpSamples.add(url)
+    try {
+      await fetch(url)
+    } catch {
+      prefetchedErpSamples.delete(url)
+    }
+  }
+  isErpPrefetching = false
+}
+
+// Moves `url` to the front of the queue; `andRest` queues every other sample after it
+const prefetchErpSample = (url: string, andRest = false) => {
+  const connection = (navigator as Navigator & { connection?: { saveData?: boolean } }).connection
+  if (connection?.saveData) return
+  const rest = andRest ? erpWorkSamples.map((sample) => sample.url).filter((u) => u !== url) : []
+  for (const u of [url, ...rest]) {
+    const index = erpPrefetchQueue.indexOf(u)
+    if (index !== -1) erpPrefetchQueue.splice(index, 1)
+  }
+  erpPrefetchQueue.unshift(url)
+  for (const u of rest) if (!erpPrefetchQueue.includes(u)) erpPrefetchQueue.push(u)
+  runErpPrefetchQueue()
+}
+
 const Experience = React.memo(() => {
   const [isErpPreviewOpen, setIsErpPreviewOpen] = React.useState(false)
   const [isErpPreviewLoading, setIsErpPreviewLoading] = React.useState(true)
@@ -65,6 +101,10 @@ const Experience = React.memo(() => {
 
     window.addEventListener('keydown', closeOnEscape)
     return () => window.removeEventListener('keydown', closeOnEscape)
+  }, [isErpPreviewOpen])
+
+  React.useEffect(() => {
+    if (isErpPreviewOpen) prefetchErpSample(erpWorkSamples[0].url, true)
   }, [isErpPreviewOpen])
 
   const scrollToProject = (projectId: string) => {
@@ -249,6 +289,8 @@ const Experience = React.memo(() => {
                             setIsErpPreviewLoading(true)
                             setIsErpPreviewOpen(true)
                           }}
+                          onPointerEnter={() => prefetchErpSample(erpWorkSamples[0].url, true)}
+                          onFocus={() => prefetchErpSample(erpWorkSamples[0].url, true)}
                           className="group inline-flex min-h-12 items-center gap-3 rounded-lg border border-indigo-200 bg-white px-3 py-2 text-left text-sm font-semibold text-gray-900 shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:border-indigo-400 hover:bg-indigo-50/70 hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2 active:translate-y-0"
                         >
                           <span className="flex h-9 w-9 items-center justify-center rounded-md bg-indigo-50 text-indigo-700 transition-colors group-hover:bg-indigo-100">
@@ -342,6 +384,8 @@ const Experience = React.memo(() => {
                       setIsErpPreviewLoading(true)
                       setSelectedErpSample(sample)
                     }}
+                    onPointerEnter={() => prefetchErpSample(sample.url)}
+                    onFocus={() => prefetchErpSample(sample.url)}
                     className={`min-h-[44px] shrink-0 rounded-md px-3 py-2 text-left text-sm transition-colors md:w-full ${selectedErpSample.title === sample.title
                       ? 'bg-indigo-50 font-semibold text-indigo-700 ring-1 ring-indigo-200'
                       : 'text-gray-700 hover:bg-gray-100'

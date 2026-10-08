@@ -34,32 +34,64 @@ export const experiences: Experience[] = [
     duration: "August 2026 – September 2026 · 2 Months",
     durationShort: "Aug 2026 – Sep 2026",
     description:
-      "Engineered enterprise ERP systems and delivered full-stack features across frontend, backend, and database architecture.",
+      "Full-stack developer on an enterprise ERP team, building and maintaining HR, CRM, Procurement, Warehouse, and Accounting modules across the frontend, backend, and database.",
     subtitle: "ERP System Development",
     contributions: [
       {
         number: "01",
-        title: "Core ERP Engineering",
+        title: "Feature Development",
         bullets: [
-          "Developed and maintained enterprise ERP systems utilizing Next.js, Go (Golang), Spring Boot, and PostgreSQL.",
+          "Built new features end to end from business requirements: UI, REST APIs, business logic, and PostgreSQL queries.",
+          "Created reusable UI components, including data tables, forms, and modals that fetch, filter, and paginate data from the database.",
         ],
       },
       {
         number: "02",
-        title: "Full-Stack Development",
+        title: "Feature Completion & Refinement",
         bullets: [
-          "Implemented end-to-end features and resolved complex bugs across frontend, backend, and database layers based on business requirements.",
+          "Took over features started by senior developers and brought them to production quality by adding missing UI states, validation, edge-case handling, and responsive layouts.",
+          "Worked across long, multi-step business flows (Sales → Quotation → Project → Procurement → Warehouse → Accounting), making sure each step works end to end.",
+        ],
+      },
+      {
+        number: "03",
+        title: "Bug Fixing & Data Integrity",
+        bullets: [
+          "Investigated and fixed bugs across every layer of the system: UI behavior, frontend–backend API contracts, and data/SQL issues.",
+          "Fixed problems at the root cause rather than the symptom, and added tests to prevent regressions.",
+        ],
+      },
+      {
+        number: "04",
+        title: "UI / UX",
+        bullets: [
+          "Built responsive interfaces for desktop and mobile, including mobile screens for field staff such as warehouse, transport, and on-site receiving teams.",
+        ],
+      },
+      {
+        number: "05",
+        title: "Performance Optimization",
+        bullets: [
+          "Analyzed every performance issue before changing code: identified the root cause, assessed the impact, and proposed solutions with their pros, cons, and risks, without changing the UI, UX, or business logic.",
+          "Frontend: Reviewed SSR/CSR usage, JavaScript bundle size, duplicate requests, and unnecessary re-renders. Added lazy loading for images entering the viewport, disabled unnecessary prefetching, and added skeleton loading states.",
+          "Backend/Database: Reviewed API response times, slow queries, N+1 queries, pagination, indexes, and connection pooling.",
+          "Media: Compressed images in the browser before upload, and added cache headers (Cache-Control, ETag, Last-Modified) so the backend returns 304 Not Modified for unchanged images.",
+          "Result – Employee directory: initial page load reduced from ~7 MB to ~1.8 MB, and unnecessary requests removed. Before, scrolling the full list triggered about 270 requests totaling ~57 MB.",
+          "Result – Asset requisition page: newly uploaded images reduced from ~1 MB to ~200 KB, and repeat visits no longer re-download images. Before, every visit loaded 3.6 MB.",
         ],
       },
     ],
     technologies: [
       "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
       "Go (Golang)",
       "Spring Boot",
       "PostgreSQL",
-      "React",
-      "Tailwind CSS",
       "REST API",
+      "Docker",
+      "Git",
     ],
   },
   {
