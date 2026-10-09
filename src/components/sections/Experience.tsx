@@ -317,6 +317,9 @@ const Experience = React.memo(() => {
                   ERP Work Examples
                 </h3>
                 <p className="text-sm text-gray-500">{selectedErpSample.title}</p>
+                <p className="mt-1 text-xs text-amber-700">
+                  All samples use test data only. No real company or customer information is shown.
+                </p>
               </div>
               <button
                 type="button"
