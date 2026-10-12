@@ -164,6 +164,7 @@ export const projects: Project[] = [
     "REST API",
     "Git",
     "GitHub Actions",
+    "Neon",
   ],
   imageUrl: "/images/inventory37.png",
      liveUrl: "",
