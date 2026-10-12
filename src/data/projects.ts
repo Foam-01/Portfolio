@@ -150,6 +150,26 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/Foam-01/Focus-Pulse",
     featured: true,
   },
+  {
+  id: "28",
+  title: "📦 StockFlow Mobile - Inventory Management & Stock Tracking System",
+  description:
+    "A modern Flutter-based mobile inventory management application designed to streamline stock operations, product tracking, and inventory workflows. Built with a mobile-first approach, the project focuses on essential inventory management capabilities, intuitive user interactions, and maintainable application architecture. The system is designed to support stock receiving, issuing, and adjustments, with barcode scanning, photo evidence, and a live dashboard to improve inventory visibility and operational efficiency. Developed as a cross-platform mobile application using Flutter and Dart, with supporting documentation, project organization, and automated development workflows.",
+  technologies: [
+    "Flutter",
+    "Dart",
+    "Mobile Development",
+    "Inventory Management",
+    "Barcode Scanning",
+    "REST API",
+    "Git",
+    "GitHub Actions",
+  ],
+  imageUrl: "/images/inventory37.png",
+     liveUrl: "",
+    githubUrl: "https://github.com/Foam-01/StockFlowMobile/tree/main",
+    featured: true,
+},
 
   {
     id: "22",
