@@ -172,6 +172,33 @@ export const projects: Project[] = [
     featured: true,
 },
 
+{
+  id: "29",
+  title: "🚀 DeployWatch - CI/CD & Deployment Monitoring Platform",
+  description:
+    "A production-oriented CI/CD observability platform that brings build pipelines, deployments, service health, incidents, and notifications from multiple repositories into one multi-tenant dashboard. It integrates with GitHub, GitLab, and Jenkins through HMAC-signed webhooks, which are processed idempotently via a database-backed inbox with retry and backoff. A background worker runs scheduled HTTP health checks with anti-flapping thresholds and SSRF-safe outbound requests, automatically opens incidents with a full timeline, and delivers alerts through in-app notifications, Slack, and webhook channels. The platform also includes 7/30-day delivery analytics, deployment comparison across environments, CSV exports, role-based access control (Owner/Admin/Member/Viewer), audit logging, and AES-256-GCM encrypted secrets. Built with Next.js, NestJS, PostgreSQL, and Prisma, containerized with Docker, and verified by 258 API tests, 33 Playwright E2E tests, and GitHub Actions CI.",
+  technologies: [
+    "Next.js",
+    "React",
+    "TypeScript",
+    "NestJS",
+    "PostgreSQL",
+    "Prisma",
+    "JWT",
+    "REST API",
+    "Swagger",
+    "Docker",
+    "Jest",
+    "Playwright",
+    "GitHub Actions",
+    "Neon",
+  ],
+  imageUrl: "/images/inventory38.png",
+  liveUrl: "",
+  githubUrl: "https://github.com/Foam-01/DeployWatch-CI-CD-Deployment-Monitoring-Platform",
+  featured: true,
+},
+
   {
     id: "22",
     title: "💇‍♀️ Beauty Salon Website",
