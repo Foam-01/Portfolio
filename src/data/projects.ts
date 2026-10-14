@@ -161,6 +161,7 @@ export const projects: Project[] = [
     "Mobile Development",
     "Inventory Management",
     "Barcode Scanning",
+    "NestJS",
     "REST API",
     "Git",
     "GitHub Actions",
